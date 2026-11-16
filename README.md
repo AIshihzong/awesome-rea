@@ -260,6 +260,7 @@ Tools that REA drives, or tools in the same category.
 - [SubmitGame/awesome-decomp-games](https://github.com/SubmitGame/awesome-decomp-games) - Decompiled games, many playable in the browser. CC0-1.0.
 - [morluto/awesome-reverse-engineering](https://github.com/morluto/awesome-reverse-engineering) - Curated general reverse-engineering tools and learning resources for binaries, applications, firmware, file formats and protocols, maintained by REA's own author. Organised by the task you want to do rather than by tool. It already runs its own weekly link check in CI. CC0-1.0.
 - [reacher-z/Awesome-REA](https://github.com/reacher-z/Awesome-REA) - Bilingual catalogue of reverse-engineering tools, reconstruction projects, case studies and research papers across websites, games, apps, binaries, firmware and protocols, with a searchable site and a separately labelled automated repository index. MIT.
+- [Reversed with AI](https://reversedwithai.com) - Growing directory of AI-assisted reverse engineering projects (games, firmware, protocols, apps), each with the model used, the outcome, the author's reported time and cost, and a link to its primary source. Also has setup guides, a news feed and a list of AI-decompiled games you can play. Anyone can submit a project and authors can edit their entries. Open data under CC BY 4.0. REA is not required.
 
 ## Discussion and press
 
