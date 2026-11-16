@@ -235,6 +235,7 @@
 - [How To Use REA To Clone Any Software In Minutes（Eric Tech，YouTube）](https://www.youtube.com/watch?v=FnB9tHKBJXQ) - 视频教程。
 - [inematds/rea-engenharia-reversa](https://github.com/inematds/rea-engenharia-reversa) - 🇧🇷 有葡语、英语和西语三个版本的 REA 指南，包含链接、案例、客观评估和实际测试。
 - [ZooHero500/reatool](https://github.com/ZooHero500/reatool) - 非官方的 REA 教程与对比，讲如何在编码 Agent 中安装和使用。与 morluto 无关。
+- [Reverse Engineer Anything guides](https://reverse-engineer-anything.com/) - 非官方网站，提供按软件区分、可下载的技能指南（Photoshop、ZBrush、AutoCAD、SOLIDWORKS、Geneious），为官方 REA 工作流补充该软件的背景。注册送 1 个体验积分，之后按积分付费。非开源，与 morluto 无关。披露：由该站运营者提交。
 - [JoasASantos/REA-Prompts](https://github.com/JoasASantos/REA-Prompts) - REA 提示词合集，覆盖原生二进制、固件、游戏、Android、Electron 和网站。其中的复刻类提示词按 clean-room 方式写，授权和破解研究类提示词只要求记录分析结果，不做绕过。MIT。
 
 ## 相关 MCP 逆向工具

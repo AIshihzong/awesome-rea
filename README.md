@@ -230,6 +230,7 @@ These projects came up alongside REA. Their READMEs do not say REA was used, so 
 - [How To Use REA To Clone Any Software In Minutes (Eric Tech, YouTube)](https://www.youtube.com/watch?v=FnB9tHKBJXQ) - Video tutorial.
 - [inematds/rea-engenharia-reversa](https://github.com/inematds/rea-engenharia-reversa) - 🇧🇷 Guide to REA in Portuguese, English and Spanish, with links, cases, an honest assessment and a test run.
 - [ZooHero500/reatool](https://github.com/ZooHero500/reatool) - Unofficial REA tutorials and comparisons for installing and using it with coding agents. Not affiliated with morluto.
+- [Reverse Engineer Anything guides](https://reverse-engineer-anything.com/) - Unofficial site with downloadable, software-specific skill guides (Photoshop, ZBrush, AutoCAD, SOLIDWORKS, Geneious) that add app context to the official REA workflow. One free starter credit, then paid credits. Not open source, not affiliated with morluto. Disclosure: submitted by the site's operator.
 - [JoasASantos/REA-Prompts](https://github.com/JoasASantos/REA-Prompts) - Prompt collection for REA, covering native binaries, firmware, games, Android, Electron and websites. Its cloning prompts are framed as clean-room work, and its licensing and cracking-research prompts ask for documentation only, not bypasses. MIT.
 
 ## Related MCP reverse-engineering tools
