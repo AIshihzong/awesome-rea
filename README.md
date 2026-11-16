@@ -172,6 +172,7 @@ Tags show the evidence source. Repo stars change daily, so they are not listed h
 - [qybaihe/bla](https://github.com/qybaihe/bla) - `REA` Counter-REA hardening for your own builds: it plants decoys and pushes artifacts past REA's documented resource budgets while keeping runtime behaviour the same. The README separates results measured by running real REA (capacity or budget errors on ASAR, WASM, Go, EVM, PCAP, SQLite, model files and more) from its benchmark's token and cost figures, which are internal estimates. Ghidra-based paths were not tested. MIT.
 - [davepartner/anti-reverse-engineer-anything](https://github.com/davepartner/anti-reverse-engineer-anything) - `AI-RE` AREA, another defensive toolkit aimed at REA and the tools it drives (Ghidra, Frida, LLDB, DevTools and others): it strips what builds leak and closes debugging channels, with obfuscation and anti-debug steps. The README makes no measured claims. MIT.
 - [KoNit-K/papertrade-research](https://github.com/KoNit-K/papertrade-research) - `REA` Independent research on Papertrade, a perpetual-futures protocol on HyperEVM: its frontend flows, contract bytecode, fees, liquidations and PAPER reward rules. REA cross-checks the client against the contracts, alongside the official docs and public code. Research preview, English and Chinese. Apache-2.0.
+- [VibeAudit](https://vibeaudit.sh/) - Pre-launch security audit for AI-built apps: reads the whole repo and returns findings with file:line and a paste-ready fix prompt each. Free quick scan.
 
 ## The wider wave: without confirmed REA
 
