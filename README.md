@@ -35,7 +35,7 @@
 
 How each tag is checked: [How this list stays accurate](#how-this-list-stays-accurate).
 
-> Figures and links in this list were checked on 2026-10-21, with REA's star count refreshed on 2026-11-01, and the entries added since refreshed on 2026-11-16. REA and the projects around it move weekly, so read the date next to a number before relying on it.
+> Figures and links in this list were checked on 2026-10-21, with REA's star count refreshed on 2026-11-01, and the entries added since refreshed on 2026-11-23. REA and the projects around it move weekly, so read the date next to a number before relying on it.
 
 > ⚠️ Reverse engineering is governed by local law, software licenses and terms of service. This list covers only public information, for learning, research, interoperability and preservation. Make sure you are allowed to analyse the target. See [Legal and controversy](#legal-and-controversy).
 
@@ -133,7 +133,7 @@ Tags show the evidence source. Repo stars change daily, so they are not listed h
 
 ### Apps and tools
 
-- [michaelshimeles/paper-rs](https://github.com/michaelshimeles/paper-rs) - `REA` Infinite-canvas design app in Rust (wgpu + egui), built after studying Paper's behaviour with REA and Claude Code. Apache-2.0.
+- [michaelshimeles/paper-rs](https://github.com/michaelshimeles/paper-rs) - `REA` Infinite-canvas design app in Rust (wgpu + egui), built after studying Paper's behaviour with REA and Claude Code. MIT or Apache-2.0.
 - [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) - `REA` Rust screen recorder for macOS, after studying OBS Studio's architecture (OBS is GPL-2.0).
 - [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) - `REA` Bloomberg-style trading terminal in Rust. Chart behaviour was studied from public TradingView pages. No license file.
 - [az9713/wispr-flow-rea-teardown](https://github.com/az9713/wispr-flow-rea-teardown) - `REA` Teardown of Wispr Flow's voice pipeline. Each claim is marked proven, inferred or hidden, plus a 64-line local rebuild. The README does not link morluto/rea; it follows a tutorial video. No license file.
@@ -164,8 +164,8 @@ Tags show the evidence source. Repo stars change daily, so they are not listed h
 
 - [NullLabTests/OpenBSD_netcat_REA](https://github.com/NullLabTests/OpenBSD_netcat_REA) - `REA` Static analysis of Ubuntu's netcat-openbsd 1.234-1 with REA and Ghidra. MIT.
 - [az9713/REA-demo](https://github.com/az9713/REA-demo) - `REA` REA analysing its own installed package, with falsifiable predictions and a self-grade. No license file.
-- [REA discussion #1406](https://github.com/morluto/rea/discussions/1406) - `REA` Outside-in leak check of a production Next.js + Stripe app. MIT.
-- [REA discussion #2254](https://github.com/morluto/rea/discussions/2254) - `REA` Stripped bzip2 analysed and checked against an unstripped build. MIT.
+- [REA discussion #1406](https://github.com/morluto/rea/discussions/1406) - `REA` Outside-in leak check of a production Next.js + Stripe app. REA itself is MIT.
+- [REA discussion #2254](https://github.com/morluto/rea/discussions/2254) - `REA` Stripped bzip2 analysed and checked against an unstripped build. REA itself is MIT.
 - [UnknownHacker1/rea-groundtruth](https://github.com/UnknownHacker1/rea-groundtruth) - `REA` Compares REA's reports with the actual code and provides one-command repros. MIT.
 - [dagoSte/rea-safe-agents](https://github.com/dagoSte/rea-safe-agents) - `REA` Skill that contains REA and the receiving agent in two separate restricted Docker containers: no network, read-only roots, no capabilities, no Docker socket, and zero host mounts for the agent. Exposes 27 of REA's 207 tools through an allowlist, and shares only frozen, hash-approved copies of selected inputs with REA. Pins REA 6.7.0, Ghidra 12.1.4 and JADX 0.7.1. Linux and macOS are verified; Windows is experimental. MIT.
 - [lalbers/agent-sandbox](https://github.com/lalbers/agent-sandbox) - `REA` Runs Claude Code and REA in rootless Podman, or a libkrun microVM per command, for analysing untrusted binaries. The threat model assumes the sample compromises both the agent and REA, so they see no host paths you did not mount and have no network route of their own. Tested only on Fedora 44 with SELinux. MIT.
@@ -238,7 +238,6 @@ A rewrite where every step is compared with recorded behaviour of the original p
 - [nesaon03/XYREVERSE](https://github.com/nesaon03/XYREVERSE) - `AI-RE` Agent skill pack covering IDA, Ghidra, kernel drivers, .NET, IL2CPP, Unreal, Frida, x64dbg and REA. MIT.
 - [kandada/rea-python](https://github.com/kandada/rea-python) - `AI-RE` Unofficial Python port of REA, written because the author's Python-based agent products needed native integration. Not endorsed by the upstream authors. MIT.
 - [Fractal-Tess/rea-flake](https://github.com/Fractal-Tess/rea-flake) - `AI-RE` REA packaged for Nix. MIT.
-- [planners1490/area](https://github.com/planners1490/area) - `AI-RE` Defensive counterpart to REA (Anti-Reverse Engineering Anything): zero-dependency offline Agent Skill and Python 3 CLI for Codex, Claude Code, and Antigravity that audits Mach-O, ELF, and PE binaries for symbol/toolchain leaks (`/rustc/`, `.llvm.`), ARM64/x86_64 LLVM constant-folding and `black_box` stack-spill regressions, MBA density, code signing/portability, differential equivalence, and documentation overclaims. MIT.
 - [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) - `AI-RE` MCP server, playbook and agent skills that have a coding agent add co-op to a single-player game: look for existing co-op mods, reverse-engineer the game if needed, test with bots, and package it for Steam. Suggests pairing it with a reverse-engineering MCP such as REA, GhidraMCP or ida-pro-mcp. Every player needs their own copy, and it does not touch anti-cheat or online services. MIT.
 
 ## Guides and research
@@ -269,6 +268,7 @@ Tools that REA drives, or tools in the same category.
 - [JuneYaooo/rea-video](https://github.com/JuneYaooo/rea-video) - `AI-RE` Agent skill and CLI (Claude Code, Codex) that reverse-engineers a video shot by shot: whether each shot was filmed, AI-generated or coded, the likely prompts, and a remake plan. **Not related to morluto/rea** despite the name; it analyses videos, not software. Apache-2.0.
 - [N0zoM1z0/touhou-reverse-engineering](https://github.com/N0zoM1z0/touhou-reverse-engineering) - `AI-RE` Evidence-first IDA + Codex notes, including runtime patch experiments. No REA mention.
 - [emirmrkaljevic/usb-rea](https://github.com/emirmrkaljevic/usb-rea) - `AI-RE` MCP server and CLI for USB protocol reverse engineering: capture traffic (pcap/pcapng) while you use a device's Windows vendor app, it decodes the transfers, infers the command structure and generates a Linux userspace driver. **Not related to morluto/rea** despite the name. MIT.
+- [planners1490/area](https://github.com/planners1490/area) - `AI-RE` Anti-Reverse Engineering Anything: a defensive agent skill and offline Python CLI that audits your own Mach-O, ELF and PE builds for leaked symbols and toolchain paths, obfuscation that the compiler folded away, signing and portability problems, and README claims the binary does not back up. Does not use REA. MIT.
 
 ## Other lists
 
