@@ -35,7 +35,7 @@
 
 How each tag is checked: [How this list stays accurate](#how-this-list-stays-accurate).
 
-> Figures and links in this list were checked on 2026-10-21, with REA's star count refreshed on 2026-11-01, and the entries added since refreshed on 2026-11-23. REA and the projects around it move weekly, so read the date next to a number before relying on it.
+> Figures and links in this list were checked on 2026-10-21, with REA's star count refreshed on 2026-11-01, and the entries added since refreshed on 2026-11-26. REA and the projects around it move weekly, so read the date next to a number before relying on it.
 
 > ⚠️ Reverse engineering is governed by local law, software licenses and terms of service. This list covers only public information, for learning, research, interoperability and preservation. Make sure you are allowed to analyse the target. See [Legal and controversy](#legal-and-controversy).
 
@@ -130,6 +130,7 @@ Tags show the evidence source. Repo stars change daily, so they are not listed h
 - [Moxnatiy/OpenBattlefield2](https://github.com/Moxnatiy/OpenBattlefield2) - `REA` C++20 clean-room reimplementation of the Battlefield 2 Refractor 2 engine. REA is documented in CLAUDE.md and `tools/rea.sh`, not the README. Needs the original game. MIT.
 - [OpenRsG/GunZRs](https://github.com/OpenRsG/GunZRs) - `REA` Rust + Bevy rewrite of *GunZ: The Duel*, reading the Steam install. The executable is packed, so REA's role in the port is limited. Apache-2.0.
 - [a-barzanti/ai-rebuilds](https://github.com/a-barzanti/ai-rebuilds) - `REA` Community collection of abandoned games rebuilt for the browser. Contributors use REA to write specs, then build from those specs. Ground rules forbid committing original game files. MIT.
+- [mesflit/scp-cb-remaster-godot-android](https://github.com/mesflit/scp-cb-remaster-godot-android) - `REA` Native Android port of the free fan game *SCP: Containment Breach Remaster* 0.5.0 to Godot 4.6, rebuilt after REA 6.10.1 analysed `CB-Remaster.exe` and its .NET assemblies; the REA evidence JSON is in `analysis/`. Covers three zones and four SCPs so far. Ships downscaled game assets. CC BY-SA 3.0, the same licence as the original.
 
 ### Apps and tools
 
@@ -228,6 +229,7 @@ A rewrite where every step is compared with recorded behaviour of the original p
 - [alexmi256/rea-agent-docker](https://github.com/alexmi256/rea-agent-docker) - Docker images for REA. Four variants: Ghidra + Hopper, ghidra, hopper, and ida. The IDA image does not ship IDA itself. Linux/amd64 only.
 - [psyb0t/docker-reverse-engineer-anything](https://github.com/psyb0t/docker-reverse-engineer-anything) - Unofficial Docker image of REA with JADX, Apktool and adb built in, Ghidra on demand, and a Streamable HTTP MCP endpoint, so agents can reach REA over the network. WTFPL.
 - [voidvenom/oh-my-rea](https://github.com/voidvenom/oh-my-rea) - Terminal agent (`omr`) for reverse engineering, built on REA. Point it at an app, binary, firmware image or website and ask a question; answers cite the evidence it retained. Asks before installing `rea-agents`, and works with OpenAI, Anthropic or Gemini keys. MIT.
+- [Artesiana/bridge-anything](https://github.com/Artesiana/bridge-anything) - Agent skill that uses REA to find where API-less desktop or back-office software keeps its data, then builds a small REST, MCP and CLI bridge your app talks to. Starts by checking that you hold the licence and have the right to do it, and writes only through paths the software itself uses. MIT.
 - [utabk/marrow](https://github.com/utabk/marrow) - Desktop GUI for REA on macOS, Windows and Linux (formerly REA Studio). Native binaries open in a classic code browser with listing, decompiler, function graph and symbol tree, and every REA tool gets its own form. Everything shown comes from REA's own answers; it runs the REA you install. Independent, MIT.
 - [JuanDiegoRuiz22/ReaAgents](https://github.com/JuanDiegoRuiz22/ReaAgents) - 🇪🇸 Isolated, hash-pinned install of `rea-agents` 6.8.0 for Claude Code on Windows: a portable Node, an isolated launcher, project-only MCP registration, restrictive Claude Code permissions, a network monitor and a security audit of the pinned version. Unofficial, MIT.
 - [ahmedmetered/anyrea](https://github.com/ahmedmetered/anyrea) - Registers REA's MCP server with any agent that reads MCP configuration and installs its workflow skill into any agent that reads `SKILL.md`. On an unsupported Node version it warns instead of refusing. Early, MIT.

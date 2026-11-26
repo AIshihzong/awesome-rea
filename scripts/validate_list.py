@@ -111,6 +111,7 @@ LICENSE_PATTERNS = [
     re.compile(r"Apache-2\.0", re.I),
     re.compile(r"GPL-?[23](?:\.0)?(?:-or-later)?", re.I),
     re.compile(r"CC0(?:-1\.0)?", re.I),
+    re.compile(r"CC BY(?:-SA|-NC|-ND)*(?: \d\.\d)?", re.I),
     re.compile(r"\bUnlicensed\b", re.I),
     # The SPDX identifier is `Unlicense`; `Unlicensed` above is a different word and
     # does not match it. An entry that says "Public domain (Unlicense)" was being

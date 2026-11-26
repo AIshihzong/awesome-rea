@@ -6,9 +6,9 @@
 
 Many cases are described as "built with REA". This page checks each one against the project's own README, the author's post, or the official showcase, and records what we found. First checked on 2026-10-14; the "README says REA?" column was re-checked against every linked repository's current README and agent files on 2026-11-10, with no changes. X posts could not be opened from our environment, so for them we rely on the third-party case records named in the table.
 
-**Summary (44 rows, 2026-11-19):**
+**Summary (45 rows, 2026-11-26):**
 
-- **30 confirmed:** the README, the agent instructions (AGENTS.md, CLAUDE.md) or the official showcase says REA was used.
+- **31 confirmed:** the README, the agent instructions (AGENTS.md, CLAUDE.md) or the official showcase says REA was used.
 - **3 partial:** REA was used for part of the work only.
 - **4 not verified:** 2 claimed only in the author's post, 2 with no source naming the tool.
 - **7 not REA:** other AI tools (mostly Claude Code or Codex with Ghidra or IDA), manual reverse engineering, or an unrelated project with a similar name.
@@ -61,5 +61,6 @@ Whether REA helps is a separate question. The two controlled comparisons in this
 | [ai-rebuilds](https://github.com/a-barzanti/ai-rebuilds)                                   | Yes                                  | —                                         | **Confirmed.** REA writes the specs; the browser rebuilds are built from them.                                                          |
 | [design-os-studio](https://github.com/jangtrinh/design-os-studio)                          | No                                   | Public specs in the repo cite `rea` 6.7.0 | **Confirmed.** Named in the specs, not the README.                                                                                      |
 | [DiskLens](https://github.com/KarlssonChristoffer/DiskLens)                                | Yes                                  | —                                         | **Confirmed.** REA used to study WinDirStat 2.5.0 first.                                                                                |
+| [SCP: CB Remaster Android](https://github.com/mesflit/scp-cb-remaster-godot-android)       | Yes                                  | REA evidence JSON in `analysis/`          | **Confirmed.** REA 6.10.1 analysed the game binaries; partial port.                                                                     |
 
 If you find a case that is wrong here, open an issue using the case form.

@@ -35,7 +35,7 @@
 
 每个标签怎么核对，见[这份列表怎么保证准确](#这份列表怎么保证准确)。
 
-> 本列表中的数据与链接核对于 2026-10-21，REA 星数更新于 2026-11-01，此后新增的条目更新于 2026-11-23。REA 及其周边项目每周都在变化，引用某个数字前请先看它旁边的日期。
+> 本列表中的数据与链接核对于 2026-10-21，REA 星数更新于 2026-11-01，此后新增的条目更新于 2026-11-26。REA 及其周边项目每周都在变化，引用某个数字前请先看它旁边的日期。
 
 ## 今天就能用
 
@@ -134,6 +134,7 @@
 - [Moxnatiy/OpenBattlefield2](https://github.com/Moxnatiy/OpenBattlefield2) - `REA` 用 C++20 clean-room 重实现《战地 2》的 Refractor 2 引擎。REA 用法写在 CLAUDE.md 和 `tools/rea.sh` 中，README 未提及；需要原版游戏。MIT。
 - [OpenRsG/GunZRs](https://github.com/OpenRsG/GunZRs) - `REA` 用 Rust + Bevy 重写《GunZ: The Duel》，读取 Steam 安装的原版资源。原版可执行文件有加壳，REA 在移植中的作用有限。Apache-2.0。
 - [a-barzanti/ai-rebuilds](https://github.com/a-barzanti/ai-rebuilds) - `REA` 社区项目，把停止更新的游戏复原到浏览器中。贡献者用 REA 写出规格，再据此构建。规则禁止提交原版游戏文件。MIT。
+- [mesflit/scp-cb-remaster-godot-android](https://github.com/mesflit/scp-cb-remaster-godot-android) - `REA` 把免费同人游戏《SCP: Containment Breach Remaster》0.5.0 原生移植到 Android（Godot 4.6）。先用 REA 6.10.1 分析 `CB-Remaster.exe` 及其 .NET 程序集，证据 JSON 放在 `analysis/`。目前做了三个区域和四个 SCP。仓库附带压缩后的原版素材。CC BY-SA 3.0，与原作相同。
 
 ### 桌面应用与工具复刻
 
@@ -233,6 +234,7 @@
 - [alexmi256/rea-agent-docker](https://github.com/alexmi256/rea-agent-docker) - REA 的 Docker 镜像，共四个：Ghidra + Hopper 合并版，以及 ghidra、hopper、ida 单独版。IDA 镜像不包含 IDA 本身，仅支持 linux/amd64。
 - [psyb0t/docker-reverse-engineer-anything](https://github.com/psyb0t/docker-reverse-engineer-anything) - 非官方的 REA Docker 镜像，内置 JADX、Apktool 和 adb，Ghidra 按需安装，并提供 Streamable HTTP 形式的 MCP 接口，让 Agent 可以通过网络调用 REA。WTFPL。
 - [voidvenom/oh-my-rea](https://github.com/voidvenom/oh-my-rea) - 基于 REA 的终端逆向 Agent（`omr`）。指向一个应用、二进制、固件镜像或网站并提问，回答会引用它保留的证据。安装 `rea-agents` 前会先征求同意，支持 OpenAI、Anthropic 或 Gemini 的密钥。MIT。
+- [Artesiana/bridge-anything](https://github.com/Artesiana/bridge-anything) - Agent Skill：用 REA 找出没有 API 的桌面或后台软件把数据存在哪里、如何读写，再生成一个提供 REST、MCP 和 CLI 的小型桥接服务供你的应用调用。第一步先确认你持有许可、有权这样做，写入只走软件自身使用的路径。MIT。
 - [utabk/marrow](https://github.com/utabk/marrow) - REA 的桌面图形界面，支持 macOS、Windows 和 Linux（原名 REA Studio）。原生二进制在经典的代码浏览器里打开，有反汇编列表、反编译、函数图和符号树，每个 REA 工具都有自己的表单。界面上的内容全部来自 REA 的返回结果，运行的是你自己安装的 REA。独立项目，MIT。
 - [JuanDiegoRuiz22/ReaAgents](https://github.com/JuanDiegoRuiz22/ReaAgents) - 🇪🇸 在 Windows 上给 Claude Code 隔离安装 `rea-agents` 6.8.0，所有组件按哈希固定版本：便携 Node、隔离启动器、只在项目级注册 MCP、严格的 Claude Code 权限、网络监控，并附固定版本的安全审计。非官方，MIT。
 - [ahmedmetered/anyrea](https://github.com/ahmedmetered/anyrea) - 把 REA 的 MCP Server 注册到任何读取 MCP 配置的 Agent，并把工作流 Skill 装进任何读取 `SKILL.md` 的 Agent。Node 版本不受支持时只给警告，不直接拒绝运行。早期版本，MIT。
