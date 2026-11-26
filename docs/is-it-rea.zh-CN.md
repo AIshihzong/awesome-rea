@@ -6,9 +6,9 @@
 
 很多案例都写着"用 REA 做的"。这一页把每个案例和项目自己的 README、作者帖子或官方案例逐一对照，并记录结果。首次核对于 2026-10-14；2026-11-10 又对照每个仓库当前的 README 和 Agent 说明文件重新核对了「README 写明用了 REA？」一栏，没有变化。我们的环境无法打开 X 帖子，所以对于 X 上的案例，我们依据的是表格里注明的第三方案例记录。
 
-**汇总（共 44 行，2026-11-19）：**
+**汇总（共 45 行，2026-11-26）：**
 
-- **30 个确认：** README、Agent 说明文件（AGENTS.md、CLAUDE.md）或官方案例写明用了 REA。
+- **31 个确认：** README、Agent 说明文件（AGENTS.md、CLAUDE.md）或官方案例写明用了 REA。
 - **3 个部分使用：** 只有一部分工作用了 REA。
 - **4 个未核实：** 2 个只有作者帖子里的说法，2 个找不到说明用了什么工具的来源。
 - **7 个不是 REA：** 用的是其他 AI 工具（多数是 Claude Code 或 Codex 配 Ghidra、IDA）、手工逆向，或只是名字相近的无关项目。
@@ -61,5 +61,6 @@ REA 到底有没有帮助是另一个问题。本列表收录的两组对照实�
 | [ai-rebuilds](https://github.com/a-barzanti/ai-rebuilds)                                   | 是                                  | —                                   | **已确认。** 用 REA 写规格，再按规格做浏览器重制版。                                                |
 | [design-os-studio](https://github.com/jangtrinh/design-os-studio)                          | 否                                  | 仓库内公开规格引用了 `rea` 6.7.0              | **已确认。** 写在规格文档里，不在 README 里。                                                  |
 | [DiskLens](https://github.com/KarlssonChristoffer/DiskLens)                                | 是                                  | —                                   | **已确认。** 先用 REA 研究了 WinDirStat 2.5.0。                                          |
+| [SCP: CB Remaster Android](https://github.com/mesflit/scp-cb-remaster-godot-android)       | 是                                  | `analysis/` 里有 REA 证据 JSON          | **已确认。** 用 REA 6.10.1 分析了游戏二进制，移植尚未完成。                                         |
 
 如果你发现这里有错误的案例，请使用案例表单提交 Issue。
